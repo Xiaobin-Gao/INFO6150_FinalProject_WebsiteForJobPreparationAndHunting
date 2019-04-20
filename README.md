@@ -1,7 +1,7 @@
 # INFO6150_FinalProject_WebsiteForJobPreparationAndHunting
 <img src="Angular_JobsWebApp/src/assets/logo.png">
 
-## Run the server & connect to the database before loading the landing page
+## Run the server & connect to the database before loading the landing page<br>**Make sure you have Node.js, Express, MongoDB, and Angular/cli installed first
 
 ### Run the server & connect to the database
 $ cd ~/Express<br>
