@@ -1,0 +1,68 @@
+<app-header></app-header>
+
+      
+      
+<div *ngIf="this.userObject; else elseBlock">
+  <div *ngIf="this.userObject.type=='user'">
+      <div class="userInfo">
+      <div> First Name: {{this.currentUser}}  </div>
+      <div> Last Name: {{this.currentUserLastName}}  </div>
+      <div> Email: {{this.currentUserEmail}}  </div>
+      <div> Type:{{this.currentUserType}}</div>
+      </div>
+      <app-search-section></app-search-section>
+  </div>
+
+  <div *ngIf="this.userObject.type=='company'">
+      <div class="userInfo">
+      <div> First Name: {{this.currentUser}}  </div>
+      <div> Last Name: {{this.currentUserLastName}}  </div>
+      <div> Email: {{this.currentUserEmail}}  </div>
+      <div> Type:{{this.currentUserType}}</div>
+      </div>
+      <app-post-section></app-post-section>
+  </div>
+ 
+</div>
+
+
+  
+
+
+
+
+<ng-template #elseBlock>
+
+  <ngb-carousel #carousel>
+  <ng-template ngbSlide>
+    <img src="../../assets/career1.jpg" alt="Random first slide" height="770">
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="../../assets/career2.jpg"  alt="Random second slide" height="770">
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="../../assets/career3.jpg" alt="Random third slide" height="770">
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+</ngb-carousel>
+<app-at-your-service></app-at-your-service>
+<br><br><br><br>
+<section class="page-section" id="services">
+  <div class="container">
+    <h2 class="text-center mt-0">What's Hot</h2>
+    <hr class="divider my-4">
+    <div class="ui grid posts">
+                <app-hot-news *ngFor="let article of sortedArticles()" [article]="article"></app-hot-news>
+        </div>
+  </div>
+  <br><br><br>
+</section>
+
+</ng-template>
+    
+

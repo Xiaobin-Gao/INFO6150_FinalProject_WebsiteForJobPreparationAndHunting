@@ -1,0 +1,107 @@
+.allWebPage{
+    background-color: bisque;
+}
+.container{
+    background-color: white;
+}
+.companyEach{
+    padding:1px;
+    background-color: white;
+}
+.companyInfo{
+    margin:auto;
+    width: 90%;
+    height:100px;
+    padding-top:5px;
+}
+.companyDetails{
+    margin:auto;
+    width:90%;
+    padding-bottom: 20px;
+}
+.someData{
+    margin:auto;
+    width:90%;
+    height:80px;
+}
+.logo img{
+    height:90px;
+    width:90px;
+    box-sizing: border-box;
+}
+.logo{
+    float:left;
+}
+
+.companyName{
+    float:left;
+    margin-left:20px;
+}
+.buttons{
+    float:right;
+    margin-top:45px;
+}
+
+button{
+    width:100px;
+    height:45px;
+    background-color: #F4623A;
+    color: #fff;
+    float:right;
+    margin-right: 20px;
+    border: none;
+}
+button:hover{
+    border-style: solid;
+    border-color: #F4623A;
+    color:#F4623A;
+    background-color: #fff;
+}
+button:visited{
+    border-style: solid;
+    border-color: #F4623A;
+    color:#F4623A;
+    background-color: #fff;
+}
+
+#r{
+    float:left;
+    font-size:30px;
+    margin-top:30px;
+}
+
+#rn{
+    float:left;
+    margin-left: 20px;
+    text-align: center;
+    width:150px;
+}
+.salaries{
+    float:right;
+    text-align: center;
+    margin-right:20px;
+    padding-top:20px;
+}
+.interviews{
+    float:right;
+    margin-right:20px;
+    text-align: center;
+    border-style: solid;
+    border-width:0px 1px 0px 1px;
+    border-color: grey;
+    padding-right:20px;
+    padding-left: 20px;
+    padding-top:20px;
+}
+.hot{
+    float:right;
+    text-align: center;
+    margin-right:20px;
+    padding-top:20px;
+}
+.salariesN{
+    font-size: 20px;
+}
+.salariesT{
+    font-size:20px;
+}

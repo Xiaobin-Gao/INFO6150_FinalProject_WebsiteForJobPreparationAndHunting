@@ -1,0 +1,44 @@
+<div class="container">
+<br><br>
+<div class="topbar">
+<div class="image">
+  <img src='../../assets/exp.png'>
+</div>
+<div class="jobInfo">
+  <h2>{{interview.jobName}} &nbsp; || &nbsp;{{interview.jobCompany}} </h2>
+  <span class='showType'>{{interview.jobType}}</span>
+  <br>
+  <span class="showType">Posted&nbsp;By:&nbsp;{{interview.userName}}</span>
+</div>
+  <div class='rating'>
+    <h2>Rating:{{interview.rating}}</h2>
+  </div>
+</div>
+<hr>
+<div class='interviewInfo'>
+  <div class="col-md-4 accepted">
+    <img *ngIf="this.interview.accepted=='Accepted'" src="../../assets/green.png">
+    <img *ngIf="this.interview.accepted=='Rejected'" src="../../assets/red.png">
+    <img *ngIf="this.interview.accepted=='No'" src="../../assets/red.png">
+    <span class="textShow">{{interview.accepted}}&nbsp;Offer</span>
+  </div>
+  <div class="col-md-4 expUse">
+    <img *ngIf="this.interview.expUseful=='Postive'" src="../../assets/green.png">
+    <img *ngIf="this.interview.expUseful=='Netual'" src="../../assets/yellow.png">
+    <img *ngIf="this.interview.expUseful=='Passive'" src="../../assets/red.png">
+    <span class="textShow">{{interview.expUseful}}&nbsp; Experience</span>
+  </div>
+  <div class="col-md-4 diff">
+      <img *ngIf="this.interview.difficulty=='Easy'" src="../../assets/green.png">
+      <img *ngIf="this.interview.difficulty=='Average'" src="../../assets/yellow.png">
+      <img *ngIf="this.interview.difficulty=='Difficult'" src="../../assets/red.png">
+    <span class="textShow">{{interview.difficulty}}</span>
+  </div>
+  <br>
+    
+    <h3>Comments:</h3>
+    <p>{{interview.comment}}</p>
+</div>
+<hr>
+<br>
+</div>

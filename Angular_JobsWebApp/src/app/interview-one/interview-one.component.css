@@ -1,0 +1,39 @@
+.accepted{
+    float:left;
+    
+    font-size: 15px;
+}
+.image{
+    float:left;
+    margin-right:20px;
+}
+
+.expUse{
+    float:left;
+    
+    font-size: 15px;
+}
+
+.diff{
+    float:left;
+    
+    font-size: 15px;
+}
+.interviewInfo img{
+    height:15px;
+    width:15px;
+    margin:10px;
+}
+.jobInfo{
+    float:left;
+}
+.rating{
+    float:right;
+}
+.topbar{
+    height:100px;
+}
+.image img{
+    height:80px;
+    width:80px;
+}

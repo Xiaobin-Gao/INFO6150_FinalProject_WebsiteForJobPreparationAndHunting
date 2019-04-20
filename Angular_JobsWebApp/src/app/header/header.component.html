@@ -1,0 +1,69 @@
+<section>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"><br><br><br>
+    <!--<a class="navbar-brand" href="#" style="font-size: 2.3em;"><b><i>SoftwareJobHub</i></b></a>-->
+    <a href="#"><img src="../../assets/logo.png" style="height:75px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" style="font-size: 1.3em;">
+        <!--
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        -->
+        <li class="nav-item">
+          <a class="nav-link" href="./jobs"><b>&nbsp;&nbsp;&nbsp;Jobs</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./companies"><b>&nbsp;&nbsp;&nbsp;Companies</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./interviews"><b>&nbsp;&nbsp;&nbsp;Interviews</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./learning-skills"><b>&nbsp;&nbsp;&nbsp;Learning Skills</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./whats-hot"><b>&nbsp;&nbsp;&nbsp;What's Hot</b></a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div *ngIf="this.userObject;else login">
+            Welcome {{this.currentUser}}
+          <a (click)="logout(wanttologout)"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Logout</button></a>
+        </div>
+        <ng-template #login>
+        <a [routerLink]="['/login']"><button class="btn btn-outline-success my-2 my-sm-0" type="button" style="height:40px;">Login</button></a>
+        <a [routerLink]="['/signup']"><button class="btn btn-outline-success my-2 my-sm-0" type="button" style="height:40px; margin-left: 3px">SignUp</button></a>
+        </ng-template>
+      </form>
+    </div>
+  </nav>
+  
+  <ng-template #wanttologout let-c="close" let-d="dismiss">
+    <div class = "modal-content">
+      <div class="modal-body">
+        Do you want to logout?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark btn-primary" (click)="c('yes')">Yes</button>
+        <button type="button" class="btn btn-outline-dark btn-primary" (click)="c('no')">No</button>
+      </div>
+    </div>
+  </ng-template>
+  </section>

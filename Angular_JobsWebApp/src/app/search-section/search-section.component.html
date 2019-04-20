@@ -1,0 +1,114 @@
+
+<section class="page-section" id="services">
+  
+  <div class="container">
+    <div class="topBar">
+      <div class="countPosition">
+        <div class="positionCount">
+          <h2 style="color:#F4623A;">5 5 5 0 0 3</h2>
+        </div>
+        <span style="display:block;line-height: 24px;font-size: 15px;text-align: center;">positions are waiting for you!</span>
+      </div>
+      <div class="search">
+        <div class="searchContainer">
+            <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Jobs</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem id="button1">Experience</button>
+                  <button ngbDropdownItem class="dButton">Company</button>
+                  <button ngbDropdownItem class="dButton">Location</button>
+                </div>
+            </div>
+            <h1>{{_job.company}}</h1>
+            <form (ngSubmit)="onSubmit()">
+            <input type="text" name='searchText' id='searchRext' placeholder="Search what you want" [(ngModel)]="model.searchParam">
+            <button>Search</button> 
+            
+          </form>
+        </div>
+        
+        <span style=" font-size:15px;color:#F4623A">Hot! ! !  :  Web Design  |  JavaScript  |  Big Data</span>
+      </div>
+    </div>
+    <div class="midBar">
+      <div class="chooseSection">
+        <div class="typeHead">All Type:</div>
+        <ngb-accordion [closeOthers]="true" activeIds="static-1">
+            <ngb-panel id="static-1" title="Engineering">
+              <ng-template ngbPanelContent>
+              Java &nbsp;  C#/.NET
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel id="static-2">
+              <ng-template ngbPanelTitle>
+                <span>&#9733; <b>Web</b> &#9733;</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+               Node.js   &nbsp;  PHP   &nbsp; JavaScript
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel id="static-3" title="Big Data">
+                <ng-template ngbPanelContent>
+                SQL &nbsp;  Hadoop  &nbsp; DataMing
+                </ng-template>
+            </ngb-panel>
+            <ngb-panel id="static-4" title="Hardware">
+                <ng-template ngbPanelContent>
+                IC &nbsp;  EmbededSystem
+                </ng-template>
+            </ngb-panel>
+            <ngb-panel id="static-5" title="Design">
+                <ng-template ngbPanelContent>
+                Flash &nbsp;  UI/UE &nbsp; 2D/3D
+                </ng-template>
+            </ngb-panel>
+            <ngb-panel id="static-6" title="Marketing">
+                <ng-template ngbPanelContent>
+                NewMedia &nbsp;  ProductManage
+                </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+      </div>
+      <div class="banner">
+        <div class="mainBanner">
+          <img src="../../assets/banner.jpg" width="800px" height="300px">
+        </div>
+        <div class="subBanner">
+          <div class="pic">
+            <img src="../../assets/seniors_1.jpg">
+            <h2 style="color:white;">Experience From <br>Seniors</h2>
+          </div>
+          <div class="pic">
+              <img src="../../assets/professor_1.jpg" id='img1'>
+              <h2 style="color:white;">Advisors From <br>Professors</h2>
+          </div>
+          <div class="pic" style="margin-right: 0px;">
+              <img src="../../assets/Company_1.jpg" >
+              <h2 style="color:white;">Suggestions From <br>Company</h2>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br>
+</section>
+<section class="page-section" id="services">
+  <div class="container">
+    <div class="companyList">
+      <img src="../../assets/companyList/1.png">
+      <img src="../../assets/companyList/2.png">
+      <img src="../../assets/companyList/3.png">
+      <img src="../../assets/companyList/4.png">
+      <img src="../../assets/companyList/5.png">
+      <img src="../../assets/companyList/6.png">
+      <img src="../../assets/companyList/7.png">
+      <img src="../../assets/companyList/8.jpg">
+      <img src="../../assets/companyList/9.jpg">
+      <img src="../../assets/companyList/10.jpg">
+    </div>
+  </div>
+  <br><br>
+</section>

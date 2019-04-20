@@ -1,0 +1,105 @@
+<app-header>
+</app-header>
+<div style="background:bisque">
+<div class="container" style="background-color: white">
+<div id="formdiv" #formdiv>
+<form  name="myForm">
+        <br>
+          <div class="form-group" >
+            <label for="jobName">Job&nbsp;Name</label><br>
+            <input class="form-control" type="text" name="jobName" id="jobName" [(ngModel)]="model.jobName" #jobName="ngModel" required/>
+            <div *ngIf="jobName.invalid && (jobName.dirty || jobName.touched)"
+            class="alert alert-danger">
+                <div *ngIf="jobName.errors.required">
+                  Job name is required.
+                </div>
+            </div>
+          </div>
+        <div class="form-group">
+          <label for="jobType">Job&nbsp;Type</label>
+          <input class="form-control" type="text" name="jobType" id="jobType" [(ngModel)]="model.jobType" #jobType="ngModel" placeholder="full-type/part-time/Internship" required/>
+          <div *ngIf="jobType.invalid && (jobType.dirty || jobType.touched)"
+          class="alert alert-danger">
+              <div *ngIf="jobType.errors.required">
+                Job type is required.
+              </div>
+          </div>
+        </div>
+        <div class="form-group" >
+            <label for="jobCompany">Job&nbsp;Company</label><br>
+            <input class="form-control" type="text" name="jobCompany" id="jobCompany" [(ngModel)]="model.jobCompany" #jobCompany="ngModel" required/>
+            <div *ngIf="jobCompany.invalid && (jobCompany.dirty || jobCompany.touched)"
+            class="alert alert-danger">
+                <div *ngIf="jobCompany.errors.required">
+                  Job company is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group" >
+            <label for="userName">User &nbsp;Name</label><br>
+            <input class="form-control" type="text" name="userName" id="userName" [(ngModel)]="model.userName" #userName="ngModel" required/>
+            <div *ngIf="userName.invalid && (userName.dirty || userName.touched)"
+            class="alert alert-danger">
+                <div *ngIf="userName.errors.required">
+                  User name is required.
+                </div>
+            </div>
+        </div>  
+        <div class="form-group" >
+            <label for="rating">Rating</label><br>
+            <input class="form-control" type="text" name="rating" id="rating" [(ngModel)]="model.rating" placeholder="100 in total"#rating="ngModel" required/>
+            <div *ngIf="rating.invalid && (rating.dirty || rating.touched)"
+            class="alert alert-danger">
+                <div *ngIf="rating.errors.required">
+                  Rating is required.
+                </div>
+            </div>
+        </div>  
+        <div class="form-group" >
+            <label for="accepted">Whether &nbsp;Accepted&nbsp;Job</label><br>
+            <input class="form-control" type="text" name="accepted" id="accepted" [(ngModel)]="model.accepted" placeholder="Accepted/Rejected/No"#accepted="ngModel" required/>
+            <div *ngIf="accepted.invalid && (accepted.dirty || accepted.touched)"
+            class="alert alert-danger">
+                <div *ngIf="accepted.errors.required">
+                  Whether accepted job is required.
+                </div>
+            </div>
+        </div>  
+        <div class="form-group" >
+            <label for="expUseful">Exp&nbsp;Useful</label><br>
+            <input class="form-control" type="text" name="expUseful" id="expUseful" [(ngModel)]="model.expUseful" placeholder="Postive/Passive/Netual"#expUseful="ngModel" required/>
+            <div *ngIf="expUseful.invalid && (expUseful.dirty || expUseful.touched)"
+            class="alert alert-danger">
+                <div *ngIf="expUseful.errors.required">
+                  Exp Useful is required.
+                </div>
+            </div>
+        </div>    
+        <div class="form-group" >
+            <label for="difficulty">Difficulty</label><br>
+            <input class="form-control" type="text" name="difficulty" id="difficulty" [(ngModel)]="model.difficulty" placeholder="Difficulty/Easy/Average"#difficulty="ngModel" required/>
+            <div *ngIf="difficulty.invalid && (difficulty.dirty || difficulty.touched)"
+            class="alert alert-danger">
+                <div *ngIf="difficulty.errors.required">
+                    Difficulty is required.
+                </div>
+            </div>
+        </div>    
+        <div class="form-group" >
+            <label for="comment">Comment</label><br>
+            <input class="form-control" type="text" name="comment" id="comment" [(ngModel)]="model.comment" #comment="ngModel" required/>
+            <div *ngIf="comment.invalid && (comment.dirty || comment.touched)"
+            class="alert alert-danger">
+                <div *ngIf="comment.errors.required">
+                    Comment is required.
+                </div>
+            </div>
+        </div>      
+        <button class="btn btn-primary" (click)="onclickDisplay(formdiv,showdiv)">Add My Interview</button> 
+      </form>
+      </div>
+      <div id="showdiv" style="display:none" #showdiv>
+      <app-interview-one [interview]=model></app-interview-one>
+      </div>
+    </div>
+  </div>

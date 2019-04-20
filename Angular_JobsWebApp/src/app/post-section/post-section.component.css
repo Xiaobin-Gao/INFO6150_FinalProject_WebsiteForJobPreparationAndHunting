@@ -1,0 +1,13 @@
+section {
+    width: 500px;
+}
+
+form {
+    padding: 40px;
+    margin: 10px;
+    border: 2px solid rgb(83, 163, 81);
+}
+
+button {
+    margin-left: 10px;
+}

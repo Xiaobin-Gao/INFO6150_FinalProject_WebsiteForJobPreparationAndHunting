@@ -1,0 +1,91 @@
+<app-header></app-header>
+<form (ngSubmit)="creteUser(content, firstName, lastName, userName, password)" name="myForm">
+  <br>
+    <div class="form-group" >
+      <label for="type">Who You Are</label><br>
+      <input type="radio"  name="type" [(ngModel)]="model.type" value="user" required>&nbsp;&nbsp;&nbsp;<i>A Job Seeker</i>&nbsp;&nbsp;&nbsp;
+      <input type="radio"  name="type" [(ngModel)]="model.type" value="company" >&nbsp;&nbsp;&nbsp;<i>An Employer</i>
+    </div>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input class="form-control" type="text" name="firstName" id="firstName" [(ngModel)]="model.firstName" #firstName="ngModel" required/>
+    <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"
+    class="alert alert-danger">
+        <div *ngIf="firstName.errors.required">
+          First Name is required.
+        </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input class="form-control" type="text" name="lastName" id="lastName" [(ngModel)]="model.lastName" #lastName="ngModel" required/>
+    <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)"
+    class="alert alert-danger">
+        <div *ngIf="lastName.errors.required">
+          Last Name is required.
+        </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="userName">Email</label>
+    <input class="form-control" type="text" name="userName" id="userName" [(ngModel)]="model.userName" #userName="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required/>
+    <div *ngIf="userName.invalid && (userName.dirty || userName.touched)"
+    class="alert alert-danger">
+        <div *ngIf="userName.errors.required">
+          Email is required.
+        </div>
+        <div *ngIf="userName.errors.pattern">
+          Email is invalid.
+        </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input class="form-control" type="password" name="password" id="password" [(ngModel)]="model.password" #password="ngModel" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$" required/>
+    <div *ngIf="password.invalid && (password.dirty || password.touched)"
+    class="alert alert-danger">
+        <div *ngIf="password.errors.required">
+          Password is required.
+        </div>
+        <div *ngIf="password.errors.pattern">
+          Password should be:<br>
+          <ul>
+          <li>8 characters length</li>
+          <li>2 letters in Upper Case</li>
+          <li>1 Special Character (!@#$&*)</li>
+          <li>2 numerals (0-9)</li>
+          <li>3 letters in Lower Case</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div>
+    <button class="btn btn-primary" >Sign Up</button>
+    <a [routerLink]="['/login']" class="btn btn-link">Login</a>
+  </div>
+</form>
+<br><br><br><br>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class = "modal-content">
+    <div class="modal-body">
+      User Created successfully
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark btn-primary" (click)="c('Close click')">Okay</button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #cannotSignUp let-c="close" let-d="dismiss">
+  <div class = "modal-content">
+    <div class="modal-body">
+      Please logout to create user
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark btn-primary" (click)="c('Close click')">Okay</button>
+    </div>
+  </div>
+</ng-template>
+

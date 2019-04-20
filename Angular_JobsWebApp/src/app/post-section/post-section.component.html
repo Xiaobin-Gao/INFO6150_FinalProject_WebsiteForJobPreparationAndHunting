@@ -1,0 +1,88 @@
+<br>
+<section class="page-section" id="services">
+  <button class="btn btn-primary" (click)="showPostJobForm(postJobForm)" style="background-color: rgb(83, 163, 81); border-color: rgb(83, 163, 81)">Post a job</button>
+  <form name="postJobForm" style="display: none" (ngSubmit)="creteJob(content)" #postJobForm>
+    <div class="form-group">
+      <label for="jobTitle">Job Title*</label>
+      <input class="form-control" type="text" name="jobTitle" [(ngModel)]="model.jobTitle" #jobTitle="ngModel"  id="jobTitle" required/>
+      <div *ngIf="jobTitle.invalid && (jobTitle.dirty || jobTitle.touched)"
+      class="alert alert-danger">
+          <div *ngIf="jobTitle.errors.required">
+            Job title is required.
+          </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label for="jobID">Job ID*</label>
+        <input class="form-control" type="text" name="jobID" id="jobID" [(ngModel)]="model.jobID" #jobID="ngModel" required/>
+        <div *ngIf="jobID.invalid && (jobID.dirty || jobID.touched)"
+        class="alert alert-danger">
+            <div *ngIf="jobID.errors.required">
+              Job ID is required.
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="companyName">Company Name*</label>
+        <input class="form-control" type="text" name="companyName" id="companyName" [(ngModel)]="model.companyName" #companyName="ngModel" required/>
+        <div *ngIf="companyName.invalid && (companyName.dirty || companyName.touched)"
+        class="alert alert-danger">
+            <div *ngIf="companyName.errors.required">
+              Company name is required.
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="companyID">Company ID*</label>
+        <input class="form-control" type="text" name="companyID" id="companyID" [(ngModel)]="model.companyID" #companyID="ngModel" required/>
+        <div *ngIf="companyID.invalid && (companyID.dirty || companyID.touched)"
+        class="alert alert-danger">
+            <div *ngIf="companyID.errors.required">
+              Company ID is required.
+            </div>
+        </div>
+      </div>
+      <div class="form-group">
+          <label for="jobURL">Job URL*</label>
+          <input class="form-control" type="text" name="jobURL" id="jobURL" [(ngModel)]="model.jobURL" #jobURL="ngModel" required/>
+          <div *ngIf="jobURL.invalid && (jobURL.dirty || jobURL.touched)"
+          class="alert alert-danger">
+              <div *ngIf="jobURL.errors.required">
+                Job URL is required.
+              </div>
+          </div>
+        </div> 
+      <div class="form-group">
+          <label for="jobDescription">Job Description*</label>
+          <textarea class="form-control" name="jobDescription" id="jobDescription" [(ngModel)]="model.jobDescription" #jobDescription="ngModel" required></textarea>
+          <div *ngIf="jobDescription.invalid && (jobDescription.dirty || jobDescription.touched)"
+          class="alert alert-danger">
+              <div *ngIf="jobDescription.errors.required">
+                Job description is required.
+              </div>
+          </div>
+  </div>  
+
+    <div class="form-group">
+        <label for="others">Other Comments</label>
+        <textarea class="form-control" name="others" id="others"></textarea>
+      </div>
+      <button class="btn btn-primary">Submit</button>
+      <a class="btn" style="border: 2px solid rgb(47, 126, 246); margin-left: 3px">Reset</a>
+  </form>
+
+  <ng-template #content let-c="close" let-d="dismiss">
+    <div class = "modal-content">
+      <div class="modal-body">
+        Job posted successfully
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark btn-primary" (click)="c('Close click')">Okay</button>
+      </div>
+    </div>
+  </ng-template>
+  <br><br><br><br>
+</section>
+

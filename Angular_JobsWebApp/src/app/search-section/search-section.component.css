@@ -1,0 +1,166 @@
+.topBar{
+    height:100px;
+    padding:0px;
+
+}
+.midBar{
+    padding-top: 24px;
+    height:432px;
+    padding-bottom: 24px;
+}
+.companyList{
+    height:100px;
+    padding-top: 24px;
+    background-color: white;
+}
+
+.countPosition{
+    float: left;
+    background-color: #fcfcfc;
+    padding-top:15px;
+    height:100px;
+    width:260px;
+}
+.search{
+    float:right;
+    width:800px;
+    height:100px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.chooseSection{
+    float:left;
+    background-color: #fcfcfc;
+    height:432px;
+    width:260px;
+}
+.banner{
+    float:right;
+    height:432px;
+    width:800px;
+}
+.mainBanner{
+    height:300px;
+    width:800px;
+    background-color: blue;
+}
+.subBanner{
+    height:132px;
+    width:800px;
+    padding-top:24px;
+
+}
+
+.positionCount{
+    background-color: #fff;
+    width:234px;
+    height:50px;
+    padding: 10px;
+    margin:0 auto;
+    text-align: center;
+}
+.positionCount span{
+    display: inline-block;
+    width:28px;
+    height: 30px;
+    
+}
+.searchContainer{
+    height:50px;
+    width:800px;
+    border-style: solid;
+    border-color: #F4623A;
+    border-width: 3px;
+    margin-bottom: 3px;
+}
+
+input{
+    border:0;
+    height:44px;
+}
+button{
+    height:44px;
+    width:100px;
+    border-style: solid;
+    border-color: #F4623A;
+    color: #F4623A;
+}
+
+.dropdown{
+    width:100px;
+}
+
+
+#searchRext{
+    margin-left: 10px;
+    width:583px;
+}
+#buttonSearch{
+    width:100px;
+    height:44px;
+    background-color: #F4623A;
+
+    color: #fff;
+}
+.typeHead{
+    width:260px;
+    height:40px;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+}
+.typeItem{
+    border-top-style:solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    height:50px;
+}
+.typeSum{
+    float: left;
+    width:100px;
+    font-size: 16px;
+    padding-top: 15px;
+    text-align: center
+}
+.typeDetails{
+    float: right;
+    width:160px;
+    font-size:14px;
+    padding-top:12px;
+    text-align: left;
+    color:#4f4f4f;
+}
+.pic{
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    width:260px;
+    height:108px;
+    overflow: hidden;
+}
+.pic img{
+    width:260px;
+}
+.pic :hover{
+    transform: scale(1.1);
+}
+
+.pic h2{
+    position: absolute;
+    left:20px;
+    top:10px;
+}
+
+.companyList img{
+    height:90px;
+    width:90px;
+    display: block;
+    float: left;
+    margin-left:20px;
+    box-sizing: border-box;
+}
+
+#img1 :hover {
+    transform: scale(1.5);
+}
