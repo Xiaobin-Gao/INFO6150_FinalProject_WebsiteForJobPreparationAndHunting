@@ -1,7 +1,7 @@
 # INFO6150_FinalProject_WebsiteForJobPreparationAndHunting
 <img src="Angular_JobsWebApp/src/assets/logo.png">
 
-## Run the server & connect to the database<sup>1️⃣</sup> before loading the app<sup><s>2️⃣</s></sup>
+## Run the server & connect to the database<sup><small>1️⃣</small></sup> before loading the app<sup><small>2️⃣</small></sup>
 <p><i>** Make sure you already have Node.js, Express, MongoDB, and Angular/cli installed</i></p>
 <p><i>** Make sure to add your browser(<b>Firefox<b> recommended) and turn on this extension: <b>Allow CORS: Access-Control-Allow-Origin</b></i></p>
 
