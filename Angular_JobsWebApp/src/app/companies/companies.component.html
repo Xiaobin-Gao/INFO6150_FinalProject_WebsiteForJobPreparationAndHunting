@@ -1,70 +1,70 @@
 <app-header></app-header><div class='allWebPage'>
 
-<div class='container'>
-        
-        
-    <br>
-    <h1 style='text-align: center'>Hottest Companies</h1>
-<div *ngFor="let company of companies">
-
-    <div class="companyEach">
-        <hr>
-        <div class="companyInfo">
-            <div class="logo">
-                <img src='{{company.logoURL}}'>
+    <div class='container'>
+            
+            
+        <br>
+        <h1 style='text-align: center'>Hottest Companies</h1>
+    <div *ngFor="let company of companies">
+    
+        <div class="companyEach">
+            <hr>
+            <div class="companyInfo">
+                <div class="logo">
+                    <img src='{{company.logoURL}}'>
+                </div>
+                <div class='companyName'>
+                    <h2>{{company.companyName}}</h2>
+                    <p><a href='{{company.webURL}}'>{{company.webURL}}</a>
+                        <br>
+                        {{company.cLocation}}
+                    </p>
+                </div>
+                <div class='buttons'>
+                    <a href="./createinterviews">
+                    <button type="button" name="add" >Add Interviews</button></a>   
+                    <button type='button' id="{{company.companyName}}" name='subscribe' (click)="foo(company)">Subscribe</button>
+                </div>
             </div>
-            <div class='companyName'>
-                <h2>{{company.companyName}}</h2>
-                <p><a href='{{company.webURL}}'>{{company.webURL}}</a>
-                    <br>
-                    {{company.cLocation}}
-                </p>
-            </div>
-            <div class='buttons'>
-                <a href="./createinterviews">
-                <button type="button" name="add" >Add Interviews</button></a>   
-                <button type='button' id="{{company.companyName}}" name='subscribe' (click)="foo(company)">Subscribe</button>
-            </div>
-        </div>
-        <hr>
-        <div class="someData">
-            <div class='rating'>
-
-                <span id='r'>Rating</span>
-                <div id='rn'>
-                    <h2>{{company.rating}}</h2>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" 
-                                aria-valuemin="0" aria-valuemax="100" style="width:90%">
+            <hr>
+            <div class="someData">
+                <div class='rating'>
+    
+                    <span id='r'>Rating</span>
+                    <div id='rn'>
+                        <h2>{{company.rating}}</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" 
+                                    aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class='salaries'>
+                    <span class='salariesN'>{{company.salaries}}</span>
+                    <br>
+                    <span class='salariesT'><strong>Salaries</strong></span>
+                </div>
+                <div class='interviews'>
+                    <span class='salariesN'>{{company.interviews}}</span><br>
+                    <span class='salariesT'><strong>Interviews</strong></span>
+                </div>
+                <div class='hot'>
+                    <span class='salariesN'> {{company.hot}}</span><br>
+                    <span class='salariesT'><strong>Hot</strong></span>
+                </div>
             </div>
-            <div class='salaries'>
-                <span class='salariesN'>{{company.salaries}}</span>
-                <br>
-                <span class='salariesT'><strong>Salaries</strong></span>
-            </div>
-            <div class='interviews'>
-                <span class='salariesN'>{{company.interviews}}</span><br>
-                <span class='salariesT'><strong>Interviews</strong></span>
-            </div>
-            <div class='hot'>
-                <span class='salariesN'> {{company.hot}}</span><br>
-                <span class='salariesT'><strong>Hot</strong></span>
+            <hr>
+            <div class='companyDetails'>
+                <h3>Slogan: {{company.solgan}}</h3>
+                <p>{{company.description}}</p>
             </div>
         </div>
-        <hr>
-        <div class='companyDetails'>
-            <h3>Slogan: {{company.solgan}}</h3>
-            <p>{{company.description}}</p>
-        </div>
+        <br>
+        <br>
+    
     </div>
-    <br>
-    <br>
-
-</div>
-</div>
-
-</div>
-
+    </div>
+    
+    </div>
+    

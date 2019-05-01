@@ -1,4 +1,6 @@
 
+<app-header></app-header>
+<app-search-section style="position:relative;left:35%;"></app-search-section>
 <table class="table table-hover">
     <thead>
       <tr>
@@ -9,7 +11,8 @@
         <th scope="col">Title</th>
         <th scope="col">Type</th>        
       </tr>
-    </thead>
+
+  <h3 id="error" style="text-align: center;position: absolute;width: 100%;"></h3>
     <tbody>
      
           <ng-container *ngFor="let j of jobList" >
@@ -27,3 +30,16 @@
      
     </tbody>
   </table>
+  <br>  <br>  <br>   <br>
+ <!--  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> -->

@@ -21,8 +21,8 @@ import { WhatsHotComponent } from './whats-hot/whats-hot.component';
 import { SearchSectionComponent } from './search-section/search-section.component';
 import { DisplaytableComponent } from './displaytable/displaytable.component';
 import { PostSectionComponent } from './post-section/post-section.component';
-import { InterviewCreateComponent } from './interview-create/interview-create.component';
 import { InterviewOneComponent } from './interview-one/interview-one.component';
+import { InterviewCreateComponent } from './interview-create/interview-create.component';
 
 
 @NgModule({
@@ -43,8 +43,8 @@ import { InterviewOneComponent } from './interview-one/interview-one.component';
     SearchSectionComponent,
     DisplaytableComponent,
     PostSectionComponent,
-    InterviewCreateComponent,
-    InterviewOneComponent
+    InterviewOneComponent,
+    InterviewCreateComponent
   ],
   imports: [
     BrowserModule,

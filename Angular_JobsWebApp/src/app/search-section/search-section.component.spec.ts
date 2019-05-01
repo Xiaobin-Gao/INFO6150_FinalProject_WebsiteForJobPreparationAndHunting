@@ -22,4 +22,11 @@ describe('SearchSectionComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // function sendValueIntoService(){
+//   console.log("sendValueIntoService(1) called");
+// }
+
 });
+
+

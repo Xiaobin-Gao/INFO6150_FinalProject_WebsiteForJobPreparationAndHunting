@@ -7,6 +7,7 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { job } from '../model/job.model'
 
 
+
 @Component({
   selector: 'app-search-section',
   templateUrl: './search-section.component.html',
@@ -22,8 +23,13 @@ export class SearchSectionComponent implements OnInit {
 
   ngOnInit() {
   }
-  onSubmit(){
-    console.log("funstion search triggered");
-    this.router.navigate(['/displayTable']);
+
+
+
+  onSubmit(f) {
+    //console.log(f.value.searchText); 
+    var term =  f.value.searchText;
+      this.router.navigate(['/displayTable'], { queryParams: { term: term } });
   }
+
 }

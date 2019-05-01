@@ -1,7 +1,7 @@
-import { job } from './job.model';
+import { Job } from './job.model';
 
 describe('Job', () => {
   it('should create an instance', () => {
-    expect(new job()).toBeTruthy();
+    expect(new Job()).toBeTruthy();
   });
 });

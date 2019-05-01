@@ -4,24 +4,45 @@
       
 <div *ngIf="this.userObject; else elseBlock">
   <div *ngIf="this.userObject.type=='user'">
-      <div class="userInfo">
+      <!-- <div class="userInfo">
       <div> First Name: {{this.currentUser}}  </div>
       <div> Last Name: {{this.currentUserLastName}}  </div>
       <div> Email: {{this.currentUserEmail}}  </div>
       <div> Type:{{this.currentUserType}}</div>
+      </div> -->
+      <div class="card">
+        <div class="container">
+          <h4><b>{{this.currentUser}} {{this.currentUserLastName}}</b></h4> 
+          <p>Email: {{this.currentUserEmail}} </p> 
+          <p>Type:{{this.currentUserType}} </p> 
+        </div>
       </div>
       <app-search-section></app-search-section>
+      <br>
+      <br>
+      <br>
+      <br>
+      
   </div>
 
   <div *ngIf="this.userObject.type=='company'">
-      <div class="userInfo">
+      <!--<div class="userInfo">
       <div> First Name: {{this.currentUser}}  </div>
       <div> Last Name: {{this.currentUserLastName}}  </div>
       <div> Email: {{this.currentUserEmail}}  </div>
       <div> Type:{{this.currentUserType}}</div>
+      </div>-->
+      <div class="card">
+        <div class="container">
+          <h4><b>{{this.currentUser}} {{this.currentUserLastName}}</b></h4> 
+          <p>Email: {{this.currentUserEmail}} </p> 
+          <p>Type:{{this.currentUserType}} </p> 
+        </div>
       </div>
       <app-post-section></app-post-section>
   </div>
+
+
  
 </div>
 
@@ -35,17 +56,17 @@
 
   <ngb-carousel #carousel>
   <ng-template ngbSlide>
-    <img src="../../assets/career1.jpg" alt="Random first slide" height="770">
+    <img src="../../assets/career1.jpg" alt="Random first slide" height="760">
     <div class="carousel-caption">
     </div>
   </ng-template>
   <ng-template ngbSlide>
-    <img src="../../assets/career2.jpg"  alt="Random second slide" height="770">
+    <img src="../../assets/career2.jpg"  alt="Random second slide" height="760">
     <div class="carousel-caption">
     </div>
   </ng-template>
   <ng-template ngbSlide>
-    <img src="../../assets/career3.jpg" alt="Random third slide" height="770">
+    <img src="../../assets/career3.jpg" alt="Random third slide" height="760">
     <div class="carousel-caption">
     </div>
   </ng-template>

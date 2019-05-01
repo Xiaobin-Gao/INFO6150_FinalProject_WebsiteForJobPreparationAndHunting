@@ -1,6 +1,7 @@
-<br>
+
 <section class="page-section" id="services">
-  <button class="btn btn-primary" (click)="showPostJobForm(postJobForm)" style="background-color: rgb(83, 163, 81); border-color: rgb(83, 163, 81)">Post a job</button>
+  <div style='text-align: center'>
+  <button class="btn btn-primary" (click)="showPostJobForm(postJobForm)" style="background-color: #E36B48; border-color: #E36B48;">Post a job</button></div><br>
   <form name="postJobForm" style="display: none" (ngSubmit)="creteJob(content)" #postJobForm>
     <div class="form-group">
       <label for="jobTitle">Job Title*</label>
