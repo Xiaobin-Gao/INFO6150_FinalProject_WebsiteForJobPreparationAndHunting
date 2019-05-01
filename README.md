@@ -7,9 +7,11 @@
 
 ### Run the server & connect to the database
 $ cd ~/Express<br>
+$ npm install mongoose<br>
 $ node index.js
 
 
 ### Load the landing page
 $ cd ~/Angular_JobsWebApp<br>
+$ npm install<br>
 $ ng serve --open
