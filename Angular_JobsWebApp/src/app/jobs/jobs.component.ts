@@ -6,7 +6,7 @@ import {NgbModal, NgbActiveModal, ModalDismissReasons} from '@ng-bootstrap/ng-bo
 @Component({
   selector: 'app-jobs',
   templateUrl: './jobs.component.html',
-  styleUrls: ['./jobs.component.css']
+//   styleUrls: ['./jobs.component.css']
 })
 export class JobsComponent implements OnInit {
 
