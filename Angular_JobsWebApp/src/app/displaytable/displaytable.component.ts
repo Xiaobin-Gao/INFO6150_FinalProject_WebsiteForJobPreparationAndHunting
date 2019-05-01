@@ -11,7 +11,7 @@ import 'rxjs/add/operator/filter';
 @Component({
   selector: 'app-displaytable',
   templateUrl: './displaytable.component.html',
-  styleUrls: ['./displaytable.component.css']
+//   styleUrls: ['./displaytable.component.css']
 })
 export class DisplaytableComponent implements OnInit {
   model: any = {};
