@@ -3,7 +3,7 @@
 
 ## Run the server & connect to the database* before loading the app*
 <p><i>** Make sure you already have Node.js, Express, MongoDB, and Angular/cli installed</i></p>
-<p><i>** Make sure to add your browser(<b>Firefox<b> recommended) and turn on this extension: <b>Allow CORS: Access-Control-Allow-Origin</b></i></p>
+<p><i>** Make sure to add your browser(<b>Firefox</b> recommended) and turn on this extension: <b>Allow CORS: Access-Control-Allow-Origin</b></i></p>
 
 ### * Run the server & connect to the database
 $ cd ~/Express<br>
