@@ -5,7 +5,7 @@ import {Interview} from '../interview-one/intweview.model';
 @Component({
   selector: 'app-interviews',
   templateUrl: './interviews.component.html',
-  styleUrls: ['./interviews.component.css']
+//   styleUrls: ['./interviews.component.css']
 })
 export class InterviewsComponent implements OnInit {
   @Input() company:CompanyPage
