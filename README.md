@@ -5,13 +5,13 @@
 <p><i>** Make sure you already have Node.js, Express, MongoDB, and Angular/cli installed</i></p>
 <p><i>** Make sure to add to your browser(<b>Firefox</b> recommended) this extension: <b>Allow CORS: Access-Control-Allow-Origin</b></i></p>
 
-### * To run the server & connect to the database
+### 1. To run the server & connect to the database
 $ cd ~/Express<br>
 $ npm install mongoose<br>
 $ node index.js
 
 
-### * To load the landing page
+### 2. To load the landing page
 $ cd ~/Angular_JobsWebApp<br>
 $ npm install<br>
 $ ng serve --open
