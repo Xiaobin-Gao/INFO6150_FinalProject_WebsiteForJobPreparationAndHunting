@@ -1,4 +1,7 @@
 # INFO6150_FinalProject_WebsiteForJobPreparationAndHunting
+
+<i><b>- Team Project</b></i>
+
 <img src="Angular_JobsWebApp/src/assets/logo.png">
 
 ## Run the server & connect to the database* before loading the app*
